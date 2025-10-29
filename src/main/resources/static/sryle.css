@@ -1,0 +1,35 @@
+/*
+  もしカレンダーではなく、通常のリスト (<ul> <li>) で
+  Thymeleaf の th:classappend を使って色分けする場合の例
+*/
+
+/* 優先度: 高 */
+.priority-high {
+    border-left: 5px solid #d9534f; /* 赤色の左枠線 */
+    background-color: #fdf7f7;
+}
+
+/* 優先度: 中 */
+.priority-medium {
+    border-left: 5px solid #f0ad4e; /* 黄色の左枠線 */
+    background-color: #fefbf5;
+}
+
+/* 優先度: 低 */
+.priority-low {
+    border-left: 5px solid #5cb85c; /* 緑色の左枠線 */
+    background-color: #f8fcf8;
+}
+
+/* カテゴリ: 仕事 */
+.category-work {
+    /* 例: バッジの色を変える */
+    background-color: #0275d8; /* 青色 */
+    color: white;
+}
+
+/* カテゴリ: 個人 */
+.category-private {
+    background-color: #5cb85c; /* 緑色 */
+    color: white;
+}
