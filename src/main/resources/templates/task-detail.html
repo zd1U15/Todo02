@@ -35,11 +35,13 @@
 					</div>
 					<div class="mb-3">
 						<label for="startDate" class="form-label">開始日</label>
-						<input type="date" id="startDate" class="form-control" th:field="*{startDate}">
+						<input type="date" id="startDate" class="form-control" th:field="*{startDate}"
+							th:value="${task.startDate != null} ? ${#temporals.format(task.startDate, 'yyyy-MM-dd')} : ''">
 					</div>
 					<div class="mb-3">
 						<label for="dueDate" class="form-label">期日 *</label>
-						<input type="date" class="form-control" id="dueDate" th:field="*{dueDate}" required>
+						<input type="date" class="form-control" id="dueDate" th:field="*{dueDate}" required
+							th:value="${task.dueDate != null} ? ${#temporals.format(task.dueDate, 'yyyy-MM-dd')} : ''">
 					</div>
 
 					<div class="row">
